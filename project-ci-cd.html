@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GoLang Server Deployment Project</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+    <body>
+        <div id="container--main">
+            <a href="index.html">&#x2190; Go Back</a>
+            <h1>DevOps Project: GoLang Server Deployment with CI/CD Pipeline</h1>
+
+            <ul>
+                <li><a href="https://github.com/Paul-Weaver/golang-ci-cd">Source code</a></li>
+            </ul>
+
+            <p>This project displays my DevOps knowledge by deploying a GoLang server with an automated CI/CD pipeline, realized through GitHub Actions and AWS services. The server code is a simple web application that listens on port 8080 and responds with "Hello, world!" when accessed.</p>
+
+            <p>Upon each push to any branch except the main, the first GitHub workflow is triggered, performing code linting using golangci-lint and running tests across Ubuntu, macOS, and Windows platforms with Go versions 1.15.x, 1.16.x, and 1.17.x.</p>
+
+            <p>When a pull request is merged into the main branch, the second GitHub workflow initiates. This workflow builds a Docker image from the Dockerfile, pushes it to DockerHub, deploys the new version to Elastic Beanstalk, and conducts a smoke test to ensure the server's successful deployment.</p>
+
+            <img src="assets/images/pipeline-go.png" alt="Diagram" style="max-width: 100%; height: auto; padding: 10px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); opacity: 0.95; border: none;">
+
+            <ul>
+                <li>🏗️ This project embodies a typical DevOps workflow, demonstrating skills in automation, cloud services, version control, and deployment best practices.</li>
+                <li>🧪 The use of GitHub Actions for testing and Elastic Beanstalk for deployment illustrates an effective CI/CD pipeline.</li>
+                <li>🚀 Key improvements like automated code review, Infrastructure as Code (IaC), and performance testing elevate code quality, reproducible infrastructure, and application performance.</li>
+            </ul>
+        </div>
+    </body>
+</html>
