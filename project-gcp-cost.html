@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GCP Compute Cost Calculation Project</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+    <body>
+        <div id="container--main">
+            <a href="index.html">&#x2190; Go Back</a>
+            <h1>DevOps Project: GCP Compute Cost Calculation with Docker and GitHub Actions</h1>
+
+            <ul>
+                <li><a href="https://github.com/Paul-Weaver/gcp-compute-cost-pipeline">Source code</a></li>
+            </ul>
+            <p>This project is focused on cost management for Google Cloud Platform (GCP) instance types. It involves the creation of a GitHub Actions pipeline, using Docker containers to access the Infracost API and calculate monthly prices for a specific GCP instance type.</p>
+
+            <p>The Docker setup involved two services, service1 and service2, running in separate containers. Docker Compose was utilized for data sharing between these services. Bash scripts (fetch_price.sh and calculate_costs.sh) were used to fetch pricing data and perform the calculations.</p>
+
+            <p>GitHub Actions Pipeline is triggered on each main branch push, and includes steps for code checkout, building and running Docker services, setting cost values, and generating a summary output.</p>
+        
+            <img src="assets/images/gcp-pipeline-diagram.png" alt="Diagram" style="max-width: 100%; height: auto; padding: 10px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); opacity: 0.95; border: none;">
+
+            <ul>
+                <li>🚀 This project showcases a robust DevOps pipeline, integrating Docker, GitHub Actions, and the Infracost API for dynamic cost calculation.</li>
+                <li>🔍 It highlights the potential improvements including error handling, efficiency optimization, and flexibility of input values.</li>
+                <li>🌐 The implementation can be extended to other cloud providers and instance types, demonstrating the project's scalability.</li>
+            </ul>
+        </div>
+    </body>
+</html>
